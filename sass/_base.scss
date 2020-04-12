@@ -1,5 +1,6 @@
 // COLOR VARIABLES
-$color-primary: #fff;
+$color-primary: #5fbaa7;
+$color-white: #fff;
 
 // FONT VARIABLES
 $font-primary: 'Segoe UI',
@@ -41,7 +42,7 @@ $transition: all .2s;
             @content
         }
 
-        ; // 600px
+        ; // 350px
     }
 
     @if $breakpoint==phone {
@@ -148,4 +149,13 @@ a {
 .container,
 .container-fluid {
     padding: 0;
+}
+
+.btn {
+    color: $color-white;
+    background-color: $color-primary;
+    cursor: pointer;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    padding: .5rem 1.2rem;
 }
